@@ -7,7 +7,7 @@ This is a **draft for review**, not the live site. All text comes from the curre
 ## What is in the draft
 
 - Home page with hero, emergency call-out card, services, equipment range, why DS, how it works, reviews, FAQs and contact.
-- **Equipment range** with filters and an **enquiry list**. There are no prices and no checkout, because the business quotes on request. Visitors add equipment to a list, which is included in the quote request.
+- **Equipment range** with filters. There are no prices and no checkout, because the business quotes on request. Each item links to the quote request form.
 - Quote form with the same enquiry types as the current site.
 - Mobile call bar ("Call Don" and "Request a Quote").
 - Light and dark colour schemes, reduced-motion support, keyboard focus styles.
@@ -19,7 +19,7 @@ This is a **draft for review**, not the live site. All text comes from the curre
 index.html          page content
 css/styles.css      all styling (colour tokens at the top)
 js/equipment.js     the equipment list (edit this to add or change items)
-js/main.js          filters, enquiry list, form
+js/main.js          filters, form
 ```
 
 ## Preview locally
