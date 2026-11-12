@@ -1,3 +1,4 @@
+/* (c) 2026 Leo. All rights reserved. Proposal for DS Refrigeration & Catering Ltd. Not licensed for reuse or redistribution. */
 (function () {
   "use strict";
 

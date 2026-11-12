@@ -1,3 +1,4 @@
+/* (c) 2026 Leo. All rights reserved. Proposal for DS Refrigeration & Catering Ltd. Not licensed for reuse or redistribution. */
 /* Equipment range shown in the catalogue.
    Categories come from the current website (dsrefrigerationservices.ie).
    There are no prices on purpose: the business quotes on request.

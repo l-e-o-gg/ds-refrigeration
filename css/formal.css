@@ -1,3 +1,4 @@
+/* (c) 2026 Leo. All rights reserved. Proposal for DS Refrigeration & Catering Ltd. Not licensed for reuse or redistribution. */
 /* Formal / corporate layer. Loaded after styles.css: calmer motion, serif headings, restrained palette. */
 :root, :root:not([data-theme="light"]), :root[data-theme="dark"] {
   --bg: #F4F6F8; --surface: #FFFFFF; --ink: #0B1F33; --muted: #4A5D70; --line: #D8E0E7;
@@ -114,3 +115,12 @@ img, svg { max-width: 100%; }
   .chip { flex: none; }
   .faq summary { font-size: 18px; }
 }
+
+/* Header fit + hero pill */
+nav.main { gap: 18px; font-size: 15px; white-space: nowrap; }
+nav.main a { white-space: nowrap; }
+.logo small { white-space: nowrap; }
+.hero-txt { display: block; }
+.open-pill { display: flex; }
+.sectors span:last-child::after { display: none; }
+@media (max-width: 1180px) { nav.main { gap: 14px; font-size: 14.5px; } .hdr-actions .hide-s { padding: 0 12px; } }

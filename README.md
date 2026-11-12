@@ -66,3 +66,14 @@ A site-builder plan normally does not accept uploaded HTML files. Options:
 3. **WordPress** on any host, if the client wants to edit pages themselves.
 
 Before choosing, confirm who holds the domain registration and DNS access, and where the business email is hosted (the site uses a Gmail address, so email should not be affected).
+
+
+## Copyright and protection
+
+- All rights reserved (see `LICENSE`). Preview only; transfer of rights happens on written agreement and full payment.
+- The preview carries `noindex` so search engines do not list it.
+- A browser always shows a site's HTML, CSS and JS, so code cannot be fully hidden. Real protection is the licence, the contract, and handing over the final clean version only after payment.
+
+## Tools (js/tools.js)
+
+Cold room sizer, F-Gas check, equipment-down triage and an "open now" indicator (Europe/Dublin, Mon to Fri 09:00 to 17:00). All guidance is indicative. To confirm with the client: opening hours, out-of-hours handling, certificate number and the F-Gas wording.
