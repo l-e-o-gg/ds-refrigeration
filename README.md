@@ -6,7 +6,7 @@ This is a **draft for review**, not the live site. All text comes from the curre
 
 ## What is in the draft
 
-- Home page with hero, emergency call-out card, services, equipment range, why DS, how it works, reviews, FAQs and contact.
+- Home page with hero, emergency call-out card, services, equipment range, why DS, FAQs and contact.
 - **Equipment range** with filters. There are no prices and no checkout, because the business quotes on request. Each item links to the quote request form.
 - Quote form with the same enquiry types as the current site.
 - Mobile call bar ("Call Don" and "Request a Quote").
