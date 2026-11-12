@@ -38,7 +38,7 @@
     $("grid").innerHTML = list.map(function (e, i) {
       var on = state.picked.indexOf(e.id) >= 0;
       return '<article class="card" style="--i:' + i + '">' +
-        '<div class="pic"><span class="tag">' + e.note + "</span>" + icon(e.icon) + "</div>" +
+        '<div class="pic">' + icon(e.icon) + "</div>" +
         '<div class="body"><h3>' + e.name + "</h3><p>" + e.blurb + "</p>" +
         '<div class="row"><span class="poa">Price on request</span>' +
         '<button type="button" class="btn small primary' + (on ? " added" : "") + '" data-pick="' + e.id + '">' + (on ? "✓ In enquiry" : "+ Add to enquiry") + "</button></div></div></article>";
@@ -126,7 +126,7 @@
 
   /* Init */
   var mq = $("mq");
-  var sectors = ["Restaurants", "Hotels", "Bars", "Cafés", "Shops", "Takeaways", "Commercial kitchens", "Hospitals"];
+  var sectors = ["Restaurants", "Hotels", "Bars", "Cafés", "Takeaways", "Commercial kitchens"];
   var row = sectors.map(function (s) { return "<span>" + s + "</span>"; }).join("");
   mq.innerHTML = row;
   $("year").textContent = new Date().getFullYear();

@@ -74,6 +74,10 @@ Before choosing, confirm who holds the domain registration and DNS access, and w
 - The preview carries `noindex` so search engines do not list it.
 - A browser always shows a site's HTML, CSS and JS, so code cannot be fully hidden. Real protection is the licence, the contract, and handing over the final clean version only after payment.
 
-## Tools (js/tools.js)
+## Content rule
 
-Cold room sizer, F-Gas check, equipment-down triage and an "open now" indicator (Europe/Dublin, Mon to Fri 09:00 to 17:00). All guidance is indicative. To confirm with the client: opening hours, out-of-hours handling, certificate number and the F-Gas wording.
+Everything on the page comes from the current website (dsrefrigerationservices.ie). Nothing is claimed that the original does not say. Still to add before launch: company registration number, privacy policy and cookie policy, real Google reviews and photos once the client provides them.
+
+## Opening-hours indicator (js/hours.js)
+
+Shows whether the office is open, using the published hours (Mon to Fri 09:00 to 17:00, Europe/Dublin).

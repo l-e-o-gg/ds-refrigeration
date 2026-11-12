@@ -124,3 +124,10 @@ nav.main a { white-space: nowrap; }
 .open-pill { display: flex; }
 .sectors span:last-child::after { display: none; }
 @media (max-width: 1180px) { nav.main { gap: 14px; font-size: 14.5px; } .hdr-actions .hide-s { padding: 0 12px; } }
+
+/* Opening-hours pill */
+.open-pill { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--on-navy-muted); margin-top: 14px; }
+.open-pill i { width: 9px; height: 9px; border-radius: 50%; background: #7A8C9C; display: inline-block; }
+.open-pill.on i { background: #4CC38A; }
+.open-pill.off i { background: #E0A83F; }
+

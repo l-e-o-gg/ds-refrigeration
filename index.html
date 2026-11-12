@@ -17,7 +17,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/formal.css">
-<link rel="stylesheet" href="css/tools.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,7 +73,7 @@
 </svg>
 
 <a class="skip" href="#main">Skip to content</a>
-<div class="draft">Preview of the proposed redesign. Not the live website. Content taken from dsrefrigerationservices.ie.</div>
+<div class="draft">Design preview. Not the live website.</div>
 
 <header class="top" id="top">
   <div class="wrap bar">
@@ -84,10 +83,8 @@
     </a>
     <nav class="main" id="nav-main" aria-label="Main">
       <a href="#services">Services</a>
-      <a href="#tools">Tools</a>
       <a href="#equipment">Equipment</a>
       <a href="#why">Why DS</a>
-      <a href="#reviews">Reviews</a>
       <a href="#faqs">FAQs</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -115,7 +112,7 @@
       </div>
       <aside class="cred" aria-label="Company credentials">
         <div><b>Since 2008</b><span>Established in Limerick</span></div>
-        <div><b>F-Gas registered</b><span>Certificate no. 260144</span></div>
+        <div><b>Finance &amp; leasing</b><span>On qualifying new equipment and projects</span></div>
         <div><b>Nationwide</b><span>Stock dispatched across Ireland</span></div>
         <div><b>New &amp; second-hand</b><span>Guarantees on both</span></div>
       </aside>
@@ -154,78 +151,9 @@
     </div>
   </div></section>
 
-  <section class="blk" id="tools"><div class="wrap">
-    <div class="sh"><div><span class="kicker">Free tools</span><h2>Plan it before you call</h2><p>Quick guides built for kitchens, bars and shops. Indicative only; we confirm everything at survey.</p></div></div>
-    <div class="tools">
-      <div class="tabs" role="tablist" aria-label="Tools">
-        <button type="button" role="tab" id="tab-room" aria-controls="panel-room" aria-selected="true">Cold room sizer</button>
-        <button type="button" role="tab" id="tab-fgas" aria-controls="panel-fgas" aria-selected="false" tabindex="-1">F-Gas check</button>
-        <button type="button" role="tab" id="tab-fault" aria-controls="panel-fault" aria-selected="false" tabindex="-1">Equipment down?</button>
-      </div>
-
-      <div class="tpanel" role="tabpanel" id="panel-room" aria-labelledby="tab-room">
-        <div>
-          <h3>Cold room sizer</h3><p class="sub">Tell us what you store. We suggest a room size you can send us as an enquiry.</p>
-          <fieldset class="fld"><legend>Temperature</legend>
-            <div class="seg"><label><input type="radio" name="rk" value="chilled" checked><span>Chilled, 0 to 4 °C</span></label><label><input type="radio" name="rk" value="frozen"><span>Frozen, −18 °C and below</span></label></div>
-          </fieldset>
-          <div class="fld"><span>Stock held at one time</span><div class="rv" id="rkg-v">800 kg</div><input id="rkg" type="range" min="100" max="6000" step="50" value="800" aria-label="Stock held in kilograms"></div>
-        </div>
-        <div class="res">
-          <div class="big" id="room-size"></div>
-          <div class="plan" id="plan"><svg viewBox="0 0 200 160" role="img" aria-label="Plan view of the suggested cold room"><rect class="room" x="40" y="20" width="120" height="90" fill="#EAF0F5" stroke="#0B2239" stroke-width="2.5"/><rect class="evap" x="46" y="26" width="34" height="8" fill="#14507F"/><rect class="door" x="90" y="108" width="20" height="4" fill="#A61E1E"/><text class="dim" id="plan-w" text-anchor="middle">1.5 m</text><text class="dim" id="plan-d">1.5 m</text></svg></div>
-          <div class="kv"><div><small>Volume</small><b id="room-vol"></b></div><div><small>Holds about</small><b id="room-cap"></b></div><div><small>Set at</small><b id="room-temp"></b></div></div>
-          <ul id="room-notes"></ul>
-          <button type="button" class="btn primary" id="room-go">Request a quote for this size</button>
-          <p class="disc">Orientation only. Real capacity depends on shelving, product and layout.</p>
-        </div>
-      </div>
-
-      <div class="tpanel" role="tabpanel" id="panel-fgas" aria-labelledby="tab-fgas" hidden>
-        <div>
-          <h3>F-Gas check</h3><p class="sub">New EU F-Gas rules affect many commercial systems. Four quick questions show if yours needs a look.</p>
-          <fieldset class="fld"><legend>Equipment type</legend><div class="seg">
-            <label><input type="radio" name="fg-type" value="Fridge, freezer or display unit" checked><span>Fridge / freezer / display</span></label>
-            <label><input type="radio" name="fg-type" value="Cold room or centralised system"><span>Cold room / central system</span></label>
-            <label><input type="radio" name="fg-type" value="Air conditioning"><span>Air conditioning</span></label></div></fieldset>
-          <fieldset class="fld"><legend>Refrigerant (on the nameplate)</legend><div class="seg">
-            <label><input type="radio" name="fg-gas" value="high"><span>R404A or R507</span></label>
-            <label><input type="radio" name="fg-gas" value="mid"><span>R134a, R407A/F or R410A</span></label>
-            <label><input type="radio" name="fg-gas" value="nat"><span>R290, R600a or R32</span></label>
-            <label><input type="radio" name="fg-gas" value="unk" checked><span>Not sure</span></label></div></fieldset>
-          <fieldset class="fld"><legend>Age of equipment</legend><div class="seg">
-            <label><input type="radio" name="fg-age" value="new"><span>Under 10 years</span></label>
-            <label><input type="radio" name="fg-age" value="old" checked><span>10 years or more</span></label></div></fieldset>
-          <fieldset class="fld"><legend>Do you keep leak check records?</legend><div class="seg">
-            <label><input type="radio" name="fg-log" value="yes"><span>Yes</span></label>
-            <label><input type="radio" name="fg-log" value="no"><span>No</span></label>
-            <label><input type="radio" name="fg-log" value="unk" checked><span>Not sure</span></label></div></fieldset>
-        </div>
-        <div class="res" id="fg-res" aria-live="polite"></div>
-      </div>
-
-      <div class="tpanel" role="tabpanel" id="panel-fault" aria-labelledby="tab-fault" hidden>
-        <div>
-          <h3>Equipment down?</h3><p class="sub">Try these safe checks first. If they do not help, call us straight away.</p>
-          <label class="fld" for="ft-sym"><span>What is happening?</span>
-            <select id="ft-sym">
-              <option value="nocool">Not cooling / too warm</option>
-              <option value="freeze">Freezing food / too cold</option>
-              <option value="ice">Ice or frost build-up</option>
-              <option value="water">Water leaking</option>
-              <option value="noise">Noisy or running non-stop</option>
-              <option value="ice_m">Ice machine not making ice</option>
-              <option value="alarm">Controller alarm or error code</option>
-            </select></label>
-        </div>
-        <div class="res" id="ft-res" aria-live="polite"></div>
-      </div>
-    </div>
-  </div></section>
-
   <section class="blk" id="equipment"><div class="wrap">
     <div class="sh">
-      <div><span class="kicker">The range</span><h2>Equipment for every kitchen, bar and shop</h2><p>Browse by type and add what you need to your enquiry. No account, no checkout. We reply with availability and pricing.</p></div>
+      <div><span class="kicker">The range</span><h2>Equipment for every kitchen and bar</h2><p>Browse by type and add what you need to your enquiry. No account, no checkout. We reply with availability and pricing.</p></div>
       <div class="chips" id="chips" role="group" aria-label="Filter equipment"></div>
     </div>
     <div class="grid" id="grid" aria-live="polite"></div>
@@ -255,26 +183,8 @@
     </div>
   </div></section>
 
-  <section class="blk" id="how"><div class="wrap">
-    <div class="sh"><div><span class="kicker">How it works</span><h2>From first call to ongoing support</h2></div></div>
-    <ol class="steps">
-      <li><b>Tell us what you need</b><span>Call, email or send an enquiry with the equipment and your space.</span></li>
-      <li><b>Get a clear quote</b><span>We confirm stock, options and pricing, including leasing if you want it.</span></li>
-      <li><b>Supply &amp; install</b><span>Delivery and professional on-site setup.</span></li>
-      <li><b>Service &amp; support</b><span>Servicing and a fast response if something goes wrong.</span></li>
-    </ol>
-  </div></section>
-
-  <section class="blk" id="reviews"><div class="wrap">
-    <div class="sh"><div><span class="kicker">Reviews</span><h2>What customers say</h2></div></div>
-    <div class="reviews">
-      <b style="font-family:var(--display);font-size:24px;font-weight:600">Google reviews go here</b>
-      <p>The current site mentions verified 5-star Google reviews. In the final version we will show the real reviews with a link to the Google profile. Nothing has been invented here.</p>
-    </div>
-  </div></section>
-
   <section class="blk" id="faqs"><div class="wrap">
-    <div class="sh"><div><span class="kicker">FAQs</span><h2>Quick answers</h2><p>Draft answers based on the current website. To be confirmed with Don.</p></div></div>
+    <div class="sh"><div><span class="kicker">FAQs</span><h2>Quick answers</h2></div></div>
     <div class="faq">
       <details><summary>Do you supply equipment outside Limerick?</summary><p>Yes. We are based in Limerick and dispatch stock to customers throughout Ireland.</p></details>
       <details><summary>Do you sell second-hand equipment?</summary><p>We supply new and second-hand equipment, with guarantees on both. Contact Don for current stock and second-hand bargains.</p></details>
@@ -319,7 +229,7 @@
       <label for="f-message">Message / requirements<textarea id="f-message" name="message"></textarea></label>
       <button type="submit" class="btn primary">Send enquiry</button>
       <p class="ok" id="ok" role="status">Opening your email app with your enquiry. If nothing opens, email dsrefrigeration.ie@gmail.com or call 087 298 7717.</p>
-      <p class="hint">Breakdown? Please phone 087 298 7717 instead of using this form. We only use your details to reply to your enquiry.</p>
+      <p class="hint">Breakdown? Please phone 087 298 7717 instead of using this form.</p>
     </form>
   </div></section>
 </main>
@@ -329,7 +239,7 @@
     <div><h3>DS Refrigeration &amp; Catering Ltd</h3><p>Commercial refrigeration, catering equipment and air conditioning. Limerick and nationwide.</p></div>
     <div><h3>Explore</h3><a href="#services">Services</a><a href="#equipment">Equipment</a><a href="#why">Why DS</a><a href="#faqs">FAQs</a></div>
     <div><h3>Contact</h3><a href="tel:+353872987717">087 298 7717</a><a href="mailto:dsrefrigeration.ie@gmail.com">dsrefrigeration.ie@gmail.com</a></div>
-    <div class="legal">© <span id="year">2026</span> DS Refrigeration &amp; Catering Ltd. Registered in Ireland. [ Company registration number and registered office ] · [ Privacy policy ] · [ Cookie policy ]</div>
+    <div class="legal">© <span id="year">2026</span> DS Refrigeration &amp; Catering Ltd. </div>
   </div>
 </footer>
 
@@ -338,6 +248,6 @@
 
 <script src="js/equipment.js"></script>
 <script src="js/main.js"></script>
-<script src="js/tools.js"></script>
+<script src="js/hours.js"></script>
 </body>
 </html>
